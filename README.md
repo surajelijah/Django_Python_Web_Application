@@ -4,8 +4,8 @@ Webpage that allows you to search for event information using the
 Ticketmaster API, and the results will be displayed in a tabular format. The page will also provide event and
 venue details.
 
-Front End - HTML, Bootstrap, JavaScript
-Backend - Python
+- Front End - HTML, Bootstrap, JavaScript
+- Backend - Python
 
 
 In this project we have used
