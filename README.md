@@ -6,9 +6,9 @@ venue details.
 
 In this project we have used
 
-**- Python to build API's
+- Python to build API's
 - Used Ticket Master API
 -  Used Google Geocoding AP
 -  Used IPInfo.io API
-**
-  Deployed the above project in **Google Cloud **
+
+Deployed the above project in **Google Cloud **
