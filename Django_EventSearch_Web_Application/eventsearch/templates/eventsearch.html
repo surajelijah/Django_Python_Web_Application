@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Events Search</title>
+    <link type="text/css" rel="stylesheet" href="../static/css/eventsearchstyles.css">
+    <script src="../static/js/eventsearch.js"></script>
+</head>
+
+<body>
+
+    <div id="eventsearch_div">
+    <div id="eventsearch_div_contents">
+        <h1 id="event_title">Events Search</h1>
+        <hr>
+        <br>
+        <br>
+       
+
+        <form id="event_form" onsubmit="return data_fetch()" method="get">
+
+            <label for="keyword" id="keyword_label">Keyword<sup class="asterisk">*</sup></label>
+            <br>   
+            <input type="text" id="keyword" class="input_box_style" required>
+            <br>
+
+            <div id="distance_block">
+                <label for="distance" id="distance_label">Distance (miles)</label>
+                <br>
+
+                <input type="number" class="input_box_style" id="distance" placeholder="10">
+            </div>
+
+            <div id="category_block">
+                <label for="category" id="category_label">Category<sup class="asterisk">*</sup></label>
+                <br>
+                <select name="category"  class="input_box_style" id="category">
+                    <option value="Default" selected>Default</option>
+                    <option value="Music">Music</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Arts">Arts</option>
+                    <option value="Theatre">Theatre</option>
+                    <option value="Film">Film</option>
+                    <option value="Miscellaneous">Miscellaneous</option>
+                </select>
+            </div>
+            <br>
+
+            <label for="location" id="location_label">Location<sup class="asterisk">*</sup></label>
+            <input type="checkbox" id="location_checkbox" onclick="add_location_label()">
+            <label for="location_chekbox" id="auto_location_label">Auto-Detect Location</label>
+            <br>
+
+            <input type="text" id="location" class="input_box_style" required>
+        </form>
+        <button id="search" form="event_form" class="button_class">SEARCH</button>
+        <button id="clear" class="button_class" onclick="form_clear()">CLEAR</button>
+    </div>
+    </div>
+
+    
+    <div id="table_div"></div>
+    <div id="event_card_"></div>
+    <div id="show_arrow"></div>
+    <div id="venue_card_"></div>
+    
+
+    </div>
+
+</body>
+
+</html>
